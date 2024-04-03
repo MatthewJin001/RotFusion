@@ -35,8 +35,8 @@ The comparison methods include
 * ``HECsim`` :  simultaneous method,
 * ``HECTsai`` : Tsai's method,
 * ``HECWu`` : Wu's method,
-* ``HECSARA`` : Sarabandi's method,
-
+* ``HECSARA`` : Sarabandi's method.
+Please refer to the submitted article or reference for details.
 
 ### Demos
 Demo ``main`` contains the calibration and evaluation of multiple methods. run ``main.m``, the results will be stored in ``result.xlsx``. The calibration and the evaluation results of the normal dataset in the paper are as follows
