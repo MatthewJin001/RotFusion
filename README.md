@@ -13,54 +13,27 @@ The hand-eye calibration problem is a fundamental problem in visual assisted rob
 
 ## How to use
 ### Dependencies
-It works well on MATLAB R2023a. The GPA methods themselves are solver-free, while compared algorithms and evaluation need the solvers in Optimization Toolbox.
+The code runs on Matlab R2023a without any additional dependencies. The necessary auxiliary functions can be found in the "Auxiliary" folder.
 
 ### Main Instructions
-To run the GPAM calibration, call
+To run the fusion calibration, call
 ```
-[out] = Algo19_GPAM(bRie,btie,qij,pattern,patternX,patternY,K)
+[R_out,t_out,rnti]=HECfuse(RAin,tAin,RBin,tBin)
 ```
 where
-* ``bRie`` (3x3xn): the rotation matrix of robot pose from effector to base,
-* ``btie`` (3xn): the translation vector of robot pose  from effector to base (unit: m),
-* ``qij`` (2xnxm): the 2D pixel,
-* ``pattern`` (3xm): the point position on the pattern, only used by GPAP,
-* ``patternX`` (1x1): the pattern row, used to determine the center point for initialization,
-* ``patternY`` (1x1): the pattern cloumn, used to determine the center point for initialization,
-* ``K`` (3x3): the camera intrinsics,
-* ``out``: the output structure, specifically includes the following
-* ``eRc`` (3x3): the rotation matrix of hand-eye pose from camera to effector,
-* ``etc`` (3x1): the translation vector of hand-eye pose from camera to effecotor (unit: m),
-* ``p`` (3mx1): the feature point positons in the base frame, 
-* ``rnti1`` (1x1):  the data preparation runtime (unit: seconds),
-* ``rnti2`` (1×1)： the total runtime (unit: seconds).
+* ``RAin`` (3x3xn): the rotation matrix of A,
+* ``tAin`` (3xn): the translation vector of A (unit: m),
+* ``RBin`` (3x3xn): the rotation matrix of B,
+* ``tAin`` (3x3xn): the translation vector of B (unit: m),
+* ``R_out`` (3x3): the rotation matrix of hand-eye pose,
+* ``t_out`` (3x1): the translation vector of hand-eye pose (unit: m),
+* ``rnti`` (1×1)： the runtime (unit: seconds).
+
+
 
 ### Demos
 Demo ``main`` contains the calibration and evaluation of multiple methods. run ``main.m``, the results will be stored in ``result.xlsx``. The calibration and the evaluation results of the normal dataset in the paper are as follows
-```
-      Method          tx         ty         tz        Rx         Ry        Rz  
-    _____________    _______    _______    ______    _______    ______    ______
 
-    {'Tsai'     }    -7.7698     -39.71    60.601    -30.714    26.023    38.065
-    {'Park'     }    -7.7004    -39.678    60.612    -30.741    26.032    38.059
-    {'Horaud'   }    -7.6994    -39.677    60.612    -30.741    26.031    38.061
-    {'Liang'    }    -7.6995    -39.677    60.612    -30.741     26.03    38.061
-    {'Li'       }     -9.581    -39.506    56.023    -30.792    25.879    38.002
-    {'Shah'     }    -6.4477    -43.536    53.069    -30.794    25.878    38.002
-    {'TabbZ1'   }    -7.3139      -42.3    54.278    -30.843    25.946    37.932
-    {'TabbZ2'   }    -6.5372    -43.287    54.756    -30.708    25.831     38.12
-    {'TabbR'    }    -6.7196    -43.616    51.889    -30.742    25.875    38.036
-    {'AliX1'    }    -7.0119    -38.716    60.887    -30.909    25.881    38.196
-    {'AliX2'    }    -6.2126    -39.046    61.142    -30.961    25.883    38.157
-    {'AliR1'    }    -7.4246     -44.16    52.158    -30.644    25.848     38.07
-    {'AliR2'    }    -6.8326    -43.298    51.485     -30.75    25.878    37.983
-    {'Zhao'     }    -6.3412    -39.347    57.654    -30.857     25.83    38.081
-    {'Wu'       }    -8.9322    -39.555    62.226    -30.741    26.026    38.065
-    {'Sarabandi'}    -7.6559    -39.671    60.618     -30.74    25.929    38.148
-    {'GPAS'     }    -6.8563    -42.375    52.069    -30.772     25.92     37.97
-    {'GPAP'     }    -6.7196    -43.616     51.89    -30.742    25.875    38.036
-    {'GPAM'     }    -7.2773    -43.033    51.989    -30.749    25.854    38.015
-```
 ```
        Method          Time        TimeD       Proj      Rec  
     _____________    ________    _________    ______    ______
