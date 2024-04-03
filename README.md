@@ -21,14 +21,21 @@ To run the fusion calibration, call
 [R_out,t_out,rnti]=HECfuse(RAin,tAin,RBin,tBin)
 ```
 where
-* ``RAin`` (3x3xn): the rotation matrix of A,
-* ``tAin`` (3xn): the translation vector of A (unit: m),
-* ``RBin`` (3x3xn): the rotation matrix of B,
-* ``tAin`` (3x3xn): the translation vector of B (unit: m),
-* ``R_out`` (3x3): the rotation matrix of hand-eye pose,
-* ``t_out`` (3x1): the translation vector of hand-eye pose (unit: m),
-* ``rnti`` (1×1)： the runtime (unit: seconds).
+* ``RAin`` (3x3xn): rotation matrix of A,
+* ``tAin`` (3xn): translation vector of A (unit: m),
+* ``RBin`` (3x3xn): rotation matrix of B,
+* ``tAin`` (3x3xn): translation vector of B (unit: m),
+* ``R_out`` (3x3): rotation matrix of hand-eye pose,
+* ``t_out`` (3x1): translation vector of hand-eye pose (unit: m),
+* ``rnti`` (1×1)： runtime (unit: seconds).
 
+The comparison methods include
+* ``HECrot`` : forward separate method,
+* ``HECtran`` : backward separate method,
+* ``HECsim`` :  simultaneous method,
+* ``HECTsai`` : Tsai's method,
+* ``HECWu`` : Wu's method,
+* ``HECSARA`` : Sarabandi's method,
 
 
 ### Demos
