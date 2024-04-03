@@ -40,55 +40,8 @@ The comparison methods include
 Please refer to the submitted article or reference for details.
 
 ### Demos
-Demo ``main`` contains the calibration and evaluation of multiple methods. run ``main.m``, the results will be stored in ``result.xlsx``. The calibration and the evaluation results of the normal dataset in the paper are as follows
+Demo ``main1``, ``main2``, and ``main3`` correspond to the accuracy comparison of different types of methods, while Demo ``main4`` is a comparison of computational efficiency. When the program ends, a visual result will be presented.
 
-```
-       Method          Time        TimeD       Proj      Rec  
-    _____________    ________    _________    ______    ______
-
-    {'Tsai'     }      1.7045       1.6613    3.0243     2.723
-    {'Park'     }      1.5945       1.5656    3.0215    2.7227
-    {'Horaud'   }      1.6124       1.5988    3.0214    2.7223
-    {'Liang'    }      1.5536       1.5438    3.0214    2.7223
-    {'Li'       }      1.5731       1.5679    2.3647    1.9909
-    {'Shah'     }      1.5188       1.5149    1.4898    1.4405
-    {'TabbZ1'   }      2.2759       1.5356    1.6917    1.5853
-    {'TabbZ2'   }      10.009       1.5189    1.6701    1.5838
-    {'TabbR'    }      2.1257       1.4869    1.4113    1.3595
-    {'AliX1'    }      3.0857       1.5695    3.3509    3.0197
-    {'AliX2'    }      2.6798       1.5229    3.4001    3.1389
-    {'AliR1'    }      3.9818       1.5295    1.4353    1.3806
-    {'AliR2'    }      2.6223       1.5303    1.4139    1.3612
-    {'Zhao'     }      3.3255        1.412    2.7252    2.4904
-    {'Wu'       }      1.5477       1.5415    3.4871    3.1516
-    {'Sarabandi'}       1.548       1.5413    3.0603    2.7448
-    {'GPAS'     }    0.018806    0.0003097    1.4438     1.353
-    {'GPAP'     }     0.10938     0.000254    1.4113    1.3595
-    {'GPAM'     }    0.048826    0.0004161    1.4275    1.3479
-```
-
-
-
-<img src="figure/png2.PNG" width="45%">
-
-**_Figure_**: The accuracy results of the comparative methods for Category 1.
-
-
-
-<img src="figure/png3.PNG" width="45%">
-
-**_Figure_**: The accuracy results of the comparative methods for Category 2.
-
-
-
-<img src="figure/png4.PNG" width="45%">
-
-**_Figure_**: The accuracy results of the comparative methods for Category 3.
-
-
-<img src="figure/png5.PNG" width="40%">
-
-**_Figure_**: The algorithm runtime of the comparative methods for Category 1.
 
 ## Reference
 * Tsai R Y, Lenz R K. A new technique for fully autonomous and efficient 3 d robotics hand/eye calibration[J]. IEEE Transactions on robotics and automation, 1989, 5(3): 345-358.
