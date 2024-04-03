@@ -13,19 +13,19 @@ The hand-eye calibration problem is a fundamental problem in visual assisted rob
 
 
 
-<img src="figure/png2.PNG" width="40%">
+<img src="figure/png2.PNG" width="45%">
 
 **_Figure_**: The accuracy results of the comparative methods for Category 1.
 
 
 
-<img src="figure/png3.PNG" width="40%">
+<img src="figure/png3.PNG" width="45%">
 
 **_Figure_**: The accuracy results of the comparative methods for Category 2.
 
 
 
-<img src="figure/png4.PNG" width="40%">
+<img src="figure/png4.PNG" width="45%">
 
 **_Figure_**: The accuracy results of the comparative methods for Category 3.
 
