@@ -1,5 +1,3 @@
-# RotFusion （ organizing the code 2024-04-03）
-
 ## A Practical Method For Hand-Eye Calibration Through Fusion
 
 ## Overview
