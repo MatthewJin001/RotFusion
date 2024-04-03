@@ -11,12 +11,12 @@ The hand-eye calibration problem is a fundamental problem in visual assisted rob
 ![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png1.PNG)
 
 
-![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png2.png)
+![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png2.PNG)
 
-![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png3.png)
+![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png3.PNG)
 
-![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png4.png)
+![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png4.PNG)
 
-![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png5.png)
+![mainFig](https://github.com/MatthewJin001/RotFusion/blob/main/figure/png5.PNG)
 
 
