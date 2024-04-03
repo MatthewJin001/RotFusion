@@ -17,7 +17,7 @@ The hand-eye calibration problem is a fundamental problem in visual assisted rob
 
 ## How to use
 ### Dependencies
-The code runs on Matlab R2023a without any additional dependencies. The necessary auxiliary functions can be found in the "Auxiliary" folder.
+The code runs on Matlab R2023a without any additional dependencies. The necessary auxiliary functions can be found in the "auxiliary" folder.
 
 ### Main Instructions
 To run the fusion calibration, call
@@ -28,7 +28,7 @@ where
 * ``RAin`` (3x3xn): rotation matrix of A,
 * ``tAin`` (3xn): translation vector of A (unit: m),
 * ``RBin`` (3x3xn): rotation matrix of B,
-* ``tAin`` (3x3xn): translation vector of B (unit: m),
+* ``tBin`` (3x3xn): translation vector of B (unit: m),
 * ``R_out`` (3x3): rotation matrix of hand-eye pose,
 * ``t_out`` (3x1): translation vector of hand-eye pose (unit: m),
 * ``rnti`` (1×1)： runtime (unit: seconds).
